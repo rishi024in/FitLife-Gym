@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO Meta Tags -->
-    <title>FitLife Gym - Best Gym in Madhapur, Hyderabad</title>
+    <title>FitLife Gym - Best Gym in Madhapur, Hyderabad | Fitness & Training</title>
     <meta name="description"
-        content="Join FitLife Gym in Madhapur, Hyderabad for top-notch equipment, expert trainers, and diverse fitness classes. Start your fitness journey today!">
+        content="Discover FitLife Gym in Madhapur, Hyderabad - your ultimate fitness center offering modern equipment, expert personal trainers, and diverse classes like Yoga, Zumba, and HIIT. Join today for a healthier you!">
     <meta name="keywords"
-        content="gym in Madhapur, Hyderabad gym, fitness center Hyderabad, personal training, group fitness classes, FitLife Gym">
+        content="gym in Madhapur, Hyderabad gym, fitness center Hyderabad, personal training Madhapur, group fitness classes Hyderabad, best gym near me, FitLife Gym, workout Hyderabad, gym membership">
     <meta name="author" content="FitLife Gym">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="FitLife Gym - Best Gym in Madhapur, Hyderabad">
     <meta property="og:description"
-        content="Transform your fitness with FitLife Gym. Offering expert trainers, modern equipment, and classes in Madhapur, Hyderabad.">
+        content="Join FitLife Gym in Madhapur for top-tier fitness with expert trainers, modern equipment, and classes. Start your fitness journey in Hyderabad today!">
     <meta property="og:image"
         content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1170&auto=format&fit=crop">
     <meta property="og:url" content="https://www.fitlifegym.com">
@@ -22,7 +22,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="FitLife Gym - Best Gym in Madhapur, Hyderabad">
     <meta name="twitter:description"
-        content="Join FitLife Gym in Madhapur for the best fitness experience in Hyderabad.">
+        content="FitLife Gym in Madhapur offers the best fitness experience in Hyderabad with trainers, equipment, and classes.">
     <meta name="twitter:image"
         content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1170&auto=format&fit=crop">
     <!-- Favicon -->
@@ -38,15 +38,17 @@
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
 
         .navbar {
             background-color: #2c3e50;
-            padding: 15px 0;
+            padding: 1rem 2rem;
         }
 
         .navbar-brand {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             font-weight: bold;
             color: #ecf0f1 !important;
         }
@@ -54,6 +56,7 @@
         .nav-link {
             color: #ecf0f1 !important;
             font-weight: 500;
+            padding: 0.5rem 1rem;
             transition: color 0.3s;
         }
 
@@ -63,7 +66,8 @@
 
         .hero {
             background: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1170&auto=format&fit=crop') no-repeat center center/cover;
-            height: 600px;
+            height: 80vh;
+            max-height: 600px;
             color: #fff;
             display: flex;
             align-items: center;
@@ -78,30 +82,32 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.6);
         }
 
         .hero-content {
             position: relative;
             z-index: 1;
+            padding: 2rem;
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: clamp(2rem, 5vw, 3.5rem);
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 1.5rem;
         }
 
         .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            margin-bottom: 2rem;
         }
 
         .hero .btn {
             background-color: #e74c3c;
             border-color: #e74c3c;
-            padding: 12px 30px;
-            font-size: 1.2rem;
+            padding: 0.75rem 2rem;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
         }
 
         .hero .btn:hover {
@@ -109,9 +115,53 @@
             border-color: #c0392b;
         }
 
+        .section {
+            padding: 4rem 1rem;
+        }
+
+        .section h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .features {
+            background-color: #fff;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .feature-item i {
+            font-size: 2.5rem;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .about,
+        .testimonials {
+            background-color: #ecf0f1;
+        }
+
+        .about p,
+        .membership-info p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
         .accordion-item {
             border: none;
-            margin-bottom: 15px;
+            margin-bottom: 1rem;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -121,8 +171,8 @@
             background-color: #2c3e50;
             color: #ecf0f1;
             font-weight: 600;
-            padding: 15px;
-            transition: background-color 0.3s, color 0.3s;
+            padding: 1rem;
+            transition: background-color 0.3s;
         }
 
         .accordion-button:not(.collapsed) {
@@ -141,59 +191,14 @@
         .accordion-body {
             background-color: #fff;
             color: #333;
-            padding: 20px;
-        }
-
-        .features {
-            background-color: #fff;
-            padding: 60px 0;
-        }
-
-        .feature-item {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .feature-item i {
-            font-size: 2.5rem;
-            color: #e74c3c;
-            margin-bottom: 15px;
-        }
-
-        .feature-item h3 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-
-        .testimonials {
-            background-color: #ecf0f1;
-            padding: 60px 0;
-        }
-
-        .testimonial-card {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        .testimonial-card p {
-            font-style: italic;
-            color: #666;
-        }
-
-        .testimonial-card h5 {
-            color: #2c3e50;
-            font-weight: bold;
+            padding: 1.5rem;
         }
 
         .card {
             border: none;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
-            margin-bottom: 20px;
+            margin-bottom: 1.5rem;
         }
 
         .card:hover {
@@ -203,6 +208,11 @@
         .card-img-top {
             height: 200px;
             object-fit: cover;
+            width: 100%;
+        }
+
+        .card-body {
+            padding: 1.5rem;
         }
 
         .card-title {
@@ -220,7 +230,8 @@
             background-color: #e74c3c;
             border-color: #e74c3c;
             font-weight: bold;
-            padding: 10px 20px;
+            padding: 0.75rem 1.5rem;
+            transition: background-color 0.3s;
         }
 
         .btn-primary:hover {
@@ -228,31 +239,35 @@
             border-color: #c0392b;
         }
 
-        .contact {
-            padding: 60px 0;
+        .testimonial-card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
         }
 
-        .contact h2,
-        .features h2,
-        .testimonials h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
+        .testimonial-card p {
+            font-style: italic;
+            color: #666;
+        }
+
+        .testimonial-card h5 {
             color: #2c3e50;
-            margin-bottom: 40px;
-            text-align: center;
+            font-weight: bold;
         }
 
         .contact-form,
         .membership-form {
             background: #fff;
-            padding: 30px;
+            padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .map-iframe {
             width: 100%;
-            height: 400px;
+            height: 350px;
             border: 0;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -261,11 +276,11 @@
         footer {
             background-color: #2c3e50;
             color: #ecf0f1;
-            padding: 20px 0;
+            padding: 2rem 0;
             font-size: 0.9rem;
+            text-align: center;
         }
 
-        /* Modal Styling */
         .modal-content {
             border-radius: 8px;
         }
@@ -281,7 +296,7 @@
         }
 
         .modal-body {
-            padding: 20px;
+            padding: 1.5rem;
         }
 
         .form-control.is-invalid {
@@ -291,6 +306,66 @@
         .invalid-feedback {
             color: #e74c3c;
         }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 1rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+
+            .hero {
+                height: 60vh;
+            }
+
+            .card-img-top {
+                height: 150px;
+            }
+
+            .contact-form,
+            .membership-form {
+                padding: 1.5rem;
+            }
+
+            .map-iframe {
+                height: 300px;
+                margin-top: 1.5rem;
+            }
+
+            .section {
+                padding: 3rem 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero .btn {
+                padding: 0.5rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            .feature-item i {
+                font-size: 2rem;
+            }
+
+            .feature-item h3 {
+                font-size: 1.25rem;
+            }
+
+            .section {
+                padding: 2rem 0.5rem;
+            }
+        }
     </style>
 </head>
 
@@ -298,7 +373,7 @@
     <!-- Header (Navigation Bar) -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="/">FitLife Gym</a>
+            <a class="navbar-brand" href="#home">FitLife Gym</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -306,27 +381,37 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/classes">Classes</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/trainers">Trainers</a>
+                        <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/membership">Membership</a>
+                        <a class="nav-link" href="#classes">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trainers">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#membership">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section with Join Now Button -->
-    <section class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="hero-content container">
             <h1>Welcome to FitLife Gym in Madhapur</h1>
-            <p>Your premier fitness center in Hyderabad for a stronger, healthier you.</p>
+            <p>Hyderabad’s premier fitness center offering expert training, modern equipment, and diverse classes to
+                help you achieve your fitness goals.</p>
             <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#joinModal">Join Now</button>
         </div>
     </section>
@@ -366,153 +451,272 @@
         </div>
     </div>
 
-    <!-- Features Section -->
-    <section class="features">
+    <!-- About Section -->
+    <section id="about" class="section about">
         <div class="container">
-            <h2 class="text-center mb-5">Why Choose FitLife Gym?</h2>
+            <h2>About FitLife Gym</h2>
+            <p>FitLife Gym, located in the heart of Madhapur, Hyderabad, is dedicated to transforming lives through
+                fitness. Established with a mission to make health and wellness accessible, we offer a state-of-the-art
+                facility equipped with the latest gym equipment, certified personal trainers, and a variety of group
+                fitness classes tailored to all fitness levels. Whether you're a beginner looking to kickstart your
+                journey or a seasoned athlete aiming to push your limits, FitLife Gym provides a supportive community
+                and expert guidance to help you succeed. Join us today and experience the best gym in Hyderabad!</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section features">
+        <div class="container">
+            <h2>Why Choose FitLife Gym?</h2>
             <div class="row">
                 <div class="col-md-4 feature-item">
                     <i class="fas fa-dumbbell"></i>
-                    <h3>Top Equipment</h3>
-                    <p>Access cutting-edge gym equipment in Madhapur for all your fitness needs.</p>
+                    <h3>Modern Equipment</h3>
+                    <p>Our gym in Madhapur features cutting-edge fitness equipment, including cardio machines, free
+                        weights, and strength training tools to maximize your workout.</p>
                 </div>
                 <div class="col-md-4 feature-item">
                     <i class="fas fa-users"></i>
                     <h3>Expert Trainers</h3>
-                    <p>Train with certified fitness trainers in Hyderabad dedicated to your success.</p>
+                    <p>Work with certified personal trainers in Hyderabad who provide customized workout plans and
+                        nutritional advice to meet your fitness goals.</p>
                 </div>
                 <div class="col-md-4 feature-item">
                     <i class="fas fa-heartbeat"></i>
-                    <h3>Varied Classes</h3>
-                    <p>From Yoga to HIIT, find the best fitness classes in Hyderabad at FitLife.</p>
+                    <h3>Diverse Classes</h3>
+                    <p>Enjoy a range of fitness classes in Hyderabad, from Yoga and Zumba to HIIT and Spin, designed to
+                        keep you motivated and fit.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Main Content (Accordion and Cards) -->
-    <div class="container my-5">
-        <!-- Accordion (Gym FAQs) -->
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        What are the operating hours of FitLife Gym in Madhapur?
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        FitLife Gym in Madhapur, Hyderabad is open Monday–Friday from 5 AM to 10 PM, and weekends from 7
-                        AM to 8 PM. Perfect for early risers and night owls alike!
+    <!-- Classes Section -->
+    <section id="classes" class="section">
+        <div class="container">
+            <h2>Our Fitness Classes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1549476464-37392f717541?q=80&w=1170&auto=format&fit=crop"
+                            class="card-img-top" alt="HIIT Classes at FitLife Gym">
+                        <div class="card-body">
+                            <h5 class="card-title">HIIT (High-Intensity Interval Training)</h5>
+                            <p class="card-text">Boost your metabolism and torches calories with our high-energy HIIT
+                                classes held every Tuesday and Thursday at 6 PM at FitLife Gym in Madhapur.</p>
+                            <a href="#contact" class="btn btn-primary">Join Now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        What fitness classes are offered at FitLife Gym?
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        At FitLife Gym in Hyderabad, we offer Yoga, Zumba, HIIT, Spin, and Strength Training classes.
-                        Led by expert instructors, our sessions are designed to keep you motivated. Check our schedule!
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://plus.unsplash.com/premium_photo-1661777196224-bfda51e61cfd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top" alt="Yoga Classes at FitLife Gym">
+                        <div class="card-body">
+                            <h5 class="card-title">Yoga</h5>
+                            <p class="card-text">Enhance flexibility and reduce stress with our Yoga sessions, led by
+                                experienced instructors at FitLife Gym in Hyderabad, available weekdays at 7 AM.</p>
+                            <a href="#contact" class="btn btn-primary">Join Now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        How do I join FitLife Gym in Madhapur?
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Sign up online or visit FitLife Gym in Madhapur for a free tour. New members get a complimentary
-                        first week and fitness assessment. Start your fitness journey today!
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://plus.unsplash.com/premium_photo-1685202713512-5442057c5e77?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top" alt="Zumba Classes at FitLife Gym">
+                        <div class="card-body">
+                            <h5 class="card-title">Zumba</h5>
+                            <p class="card-text">Dance your way to fitness with our fun Zumba classes at FitLife Gym,
+                                held every Monday and Wednesday at 6:30 PM in Madhapur.</p>
+                            <a href="#contact" class="btn btn-primary">Join Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Cards Section -->
-        <div class="row mt-5">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1169&auto=format&fit=crop"
-                        class="card-img-top" alt="Personal Trainer John Doe at FitLife Gym">
-                    <div class="card-body">
-                        <h5 class="card-title">Trainer Spotlight: John Doe</h5>
-                        <p class="card-text">With 10+ years of experience, John offers top personal training in
-                            Hyderabad at FitLife Gym.</p>
-                        <a href="/trainers" class="btn btn-primary">Book Now</a>
+    <!-- Trainers Section -->
+    <section id="trainers" class="section trainers">
+        <div class="container">
+            <h2>Meet Our Trainers</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1169&auto=format&fit=crop"
+                            class="card-img-top" alt="Trainer John Doe at FitLife Gym">
+                        <div class="card-body">
+                            <h5 class="card-title">John Doe</h5>
+                            <p class="card-text">With over 10 years of experience, John specializes in strength training
+                                and nutrition planning, helping clients in Hyderabad achieve their fitness goals.</p>
+                            <a href="#contact" class="btn btn-primary">Book a Session</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop"
-                        class="card-img-top" alt="FitLife Gym Membership Offer">
-                    <div class="card-body">
-                        <h5 class="card-title">Special Membership Offer</h5>
-                        <p class="card-text">Join FitLife Gym in Madhapur this month for 20% off your first 3 months.
-                            Unlimited access included!</p>
-                        <a href="/membership" class="btn btn-primary">Get Started</a>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1581009137042-c552e485697a?q=80&w=1170&auto=format&fit=crop"
+                            class="card-img-top" alt="Trainer Priya Sharma at FitLife Gym">
+                        <div class="card-body">
+                            <h5 class="card-title">Priya Sharma</h5>
+                            <p class="card-text">Priya is a certified yoga instructor and wellness coach with 8 years of
+                                experience, guiding members at FitLife Gym in Madhapur to inner peace and strength.</p>
+                            <a href="#contact" class="btn btn-primary">Book a Session</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1549476464-37392f717541?q=80&w=1170&auto=format&fit=crop"
-                        class="card-img-top" alt="HIIT Classes at FitLife Gym">
-                    <div class="card-body">
-                        <h5 class="card-title">HIIT Classes in Hyderabad</h5>
-                        <p class="card-text">Burn calories with our High-Intensity Interval Training at FitLife Gym,
-                            every Tuesday and Thursday at 6 PM.</p>
-                        <a href="/classes" class="btn btn-primary">Join Class</a>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1606902965551-dce093cda6e7?q=80&w=1170&auto=format&fit=crop"
+                            class="card-img-top" alt="Trainer Ravi Kumar at FitLife Gym">
+                        <div class="card-body">
+                            <h5 class="card-title">Ravi Kumar</h5>
+                            <p class="card-text">Ravi excels in HIIT and cardio training, bringing 7 years of expertise
+                                to FitLife Gym in Hyderabad to energize and transform your workouts.</p>
+                            <a href="#contact" class="btn btn-primary">Book a Session</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="section">
+        <div class="container">
+            <h2>Membership Plans</h2>
+            <div class="row membership-info">
+                <div class="col-md-6">
+                    <h3>Why Join FitLife Gym?</h3>
+                    <p>At FitLife Gym in Madhapur, we offer flexible membership plans to suit every lifestyle. Enjoy
+                        unlimited access to our gym facilities, group fitness classes, and a complimentary personal
+                        training session with every new membership. Sign up this month and get 20% off your first 3
+                        months—no hidden fees, just fitness!</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Our Plans</h3>
+                    <ul>
+                        <li><strong>Monthly Plan:</strong> ₹2,500 - Full access to gym and classes.</li>
+                        <li><strong>Quarterly Plan:</strong> ₹6,500 - Save 13% with 3 months of unlimited fitness.</li>
+                        <li><strong>Annual Plan:</strong> ₹24,000 - Best value with a free trainer session every
+                            quarter.</li>
+                    </ul>
+                    <p>Contact us or join online to start your fitness journey with FitLife Gym in Hyderabad today!</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#joinModal">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What are the operating hours of FitLife Gym in Madhapur?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            FitLife Gym in Madhapur, Hyderabad is open Monday–Friday from 5 AM to 10 PM, and weekends
+                            from 7 AM to 8 PM. We provide flexible hours to suit your busy schedule, whether you’re an
+                            early riser or a night owl looking for a gym near you in Hyderabad.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What fitness classes are offered at FitLife Gym?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            At FitLife Gym in Hyderabad, we offer a variety of classes including Yoga for flexibility,
+                            Zumba for fun cardio, HIIT for intense calorie burning, Spin for endurance, and Strength
+                            Training for muscle building. Classes are led by certified instructors and designed for all
+                            fitness levels—check our schedule below!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How do I join FitLife Gym in Madhapur?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Joining FitLife Gym is simple! Sign up online via our membership form or visit us at our
+                            Madhapur location for a free tour and registration. New members receive a complimentary
+                            first week and a personalized fitness assessment to kickstart your journey at the best gym
+                            in Hyderabad.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Are there personal training options available?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Yes, FitLife Gym in Madhapur offers personalized training with our expert trainers. Whether
+                            you need help with weight loss, muscle gain, or specific fitness goals, our certified
+                            professionals provide tailored workout plans and nutritional guidance. Book a session today!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
+    <section id="testimonials" class="section testimonials">
         <div class="container">
-            <h2 class="text-center mb-5">What Our Members Say</h2>
+            <h2>What Our Members Say</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="testimonial-card">
-                        <p>"FitLife Gym in Madhapur transformed my fitness journey with amazing trainers and classes!"
-                        </p>
-                        <h5>- Sarah M.</h5>
+                        <p>"FitLife Gym in Madhapur transformed my fitness journey with amazing trainers and diverse
+                            classes. It’s the best gym in Hyderabad!"</p>
+                        <h5>- Sarah M., IT Professional</h5>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="testimonial-card">
-                        <p>"Top-notch equipment and a welcoming community at this Hyderabad gym. I feel stronger every
-                            day!"</p>
-                        <h5>- James T.</h5>
+                        <p>"The modern equipment and welcoming community at FitLife Gym make it my go-to fitness center
+                            in Madhapur. I’ve never felt stronger!"</p>
+                        <h5>- James T., Entrepreneur</h5>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="testimonial-card">
-                        <p>"The membership deal and HIIT classes at FitLife Gym are unbeatable in Madhapur!"</p>
-                        <h5>- Emily R.</h5>
+                        <p>"The affordable membership and high-energy HIIT classes at FitLife Gym are unbeatable. Best
+                            workout spot in Hyderabad!"</p>
+                        <h5>- Emily R., Student</h5>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section with Map Iframe -->
-    <section class="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="section">
         <div class="container">
             <h2>Contact FitLife Gym in Madhapur</h2>
             <div class="row">
@@ -544,28 +748,29 @@
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30452.450599493597!2d78.3838633130146!3d17.43306717692715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91d24935df7b%3A0x2b98cea68c10880!2sCult%20Madhapur%20-%20Gym%20in%20Madhapur%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1740124097680!5m2!1sen!2sin"
                         class="map-iframe" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p class="mt-3 text-center">Visit us at: Madhapur, Hyderabad, Telangana, India</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center">
-        <p>© 2025 FitLife Gym. All rights reserved. | Madhapur, Hyderabad, Telangana, India</p>
+    <footer>
+        <p>© 2025 FitLife Gym. All rights reserved. | Madhapur, Hyderabad, Telangana, India | <a
+                href="tel:+919876543210" style="color: #e74c3c;">+91 98765 43210</a> | <a
+                href="mailto:info@fitlifegym.com" style="color: #e74c3c;">info@fitlifegym.com</a></p>
     </footer>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Form Validation Script -->
     <script>
-        // Function to validate forms
         function validateForm(formId) {
             const form = document.getElementById(formId);
             form.addEventListener('submit', function (event) {
                 event.preventDefault();
                 let isValid = true;
 
-                // Check all required inputs
                 form.querySelectorAll('[required]').forEach(input => {
                     if (!input.value.trim()) {
                         input.classList.add('is-invalid');
@@ -574,7 +779,6 @@
                         input.classList.remove('is-invalid');
                     }
 
-                    // Email validation
                     if (input.type === 'email') {
                         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                         if (!emailPattern.test(input.value)) {
@@ -583,7 +787,6 @@
                         }
                     }
 
-                    // Phone validation (10 digits)
                     if (input.type === 'tel') {
                         const phonePattern = /^[0-9]{10}$/;
                         if (!phonePattern.test(input.value)) {
@@ -594,8 +797,8 @@
                 });
 
                 if (isValid) {
-                    alert('Form submitted successfully!');
-                    form.reset(); // Reset form after submission
+                    alert('Form submitted successfully! We’ll get back to you soon.');
+                    form.reset();
                     if (formId === 'membershipForm') {
                         bootstrap.Modal.getInstance(document.getElementById('joinModal')).hide();
                     }
@@ -603,7 +806,6 @@
             });
         }
 
-        // Validate both forms
         validateForm('membershipForm');
         validateForm('contactForm');
     </script>
