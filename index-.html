@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title>FitLife Gym - Best Gym in Madhapur, Hyderabad</title>
+    <meta name="description"
+        content="Join FitLife Gym in Madhapur, Hyderabad for top-notch equipment, expert trainers, and diverse fitness classes. Start your fitness journey today!">
+    <meta name="keywords"
+        content="gym in Madhapur, Hyderabad gym, fitness center Hyderabad, personal training, group fitness classes, FitLife Gym">
+    <meta name="author" content="FitLife Gym">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="FitLife Gym - Best Gym in Madhapur, Hyderabad">
+    <meta property="og:description"
+        content="Transform your fitness with FitLife Gym. Offering expert trainers, modern equipment, and classes in Madhapur, Hyderabad.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1170&auto=format&fit=crop">
+    <meta property="og:url" content="https://www.fitlifegym.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FitLife Gym - Best Gym in Madhapur, Hyderabad">
+    <meta name="twitter:description"
+        content="Join FitLife Gym in Madhapur for the best fitness experience in Hyderabad.">
+    <meta name="twitter:image"
+        content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1170&auto=format&fit=crop">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #2c3e50;
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ecf0f1 !important;
+        }
+
+        .nav-link {
+            color: #ecf0f1 !important;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #e74c3c !important;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1170&auto=format&fit=crop') no-repeat center center/cover;
+            height: 600px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .btn {
+            background-color: #e74c3c;
+            border-color: #e74c3c;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+        }
+
+        .hero .btn:hover {
+            background-color: #c0392b;
+            border-color: #c0392b;
+        }
+
+        .accordion-item {
+            border: none;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion-button {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-weight: 600;
+            padding: 15px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #e74c3c;
+            color: #ecf0f1;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .accordion-button:hover {
+            background-color: #34495e;
+        }
+
+        .accordion-body {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+        }
+
+        .features {
+            background-color: #fff;
+            padding: 60px 0;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-item i {
+            font-size: 2.5rem;
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .testimonials {
+            background-color: #ecf0f1;
+            padding: 60px 0;
+        }
+
+        .testimonial-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: #666;
+        }
+
+        .testimonial-card h5 {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .card-text {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        .btn-primary {
+            background-color: #e74c3c;
+            border-color: #e74c3c;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: #c0392b;
+            border-color: #c0392b;
+        }
+
+        .contact {
+            padding: 60px 0;
+        }
+
+        .contact h2,
+        .features h2,
+        .testimonials h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .contact-form,
+        .membership-form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        /* Modal Styling */
+        .modal-content {
+            border-radius: 8px;
+        }
+
+        .modal-header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            border-bottom: none;
+        }
+
+        .modal-title {
+            font-weight: bold;
+        }
+
+        .modal-body {
+            padding: 20px;
+        }
+
+        .form-control.is-invalid {
+            border-color: #e74c3c;
+        }
+
+        .invalid-feedback {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header (Navigation Bar) -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">FitLife Gym</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/classes">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/trainers">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/membership">Membership</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Join Now Button -->
+    <section class="hero">
+        <div class="hero-content container">
+            <h1>Welcome to FitLife Gym in Madhapur</h1>
+            <p>Your premier fitness center in Hyderabad for a stronger, healthier you.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#joinModal">Join Now</button>
+        </div>
+    </section>
+
+    <!-- Join Now Modal -->
+    <div class="modal fade" id="joinModal" tabindex="-1" aria-labelledby="joinModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="joinModalLabel">Join FitLife Gym</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="membershipForm" class="membership-form" novalidate>
+                        <div class="mb-3">
+                            <label for="memberName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="memberName" placeholder="Your Full Name"
+                                required>
+                            <div class="invalid-feedback">Please enter your full name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="memberEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="memberEmail" placeholder="Your Email" required>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="memberPhone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="memberPhone" placeholder="Your Phone Number"
+                                pattern="[0-9]{10}" required>
+                            <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose FitLife Gym?</h2>
+            <div class="row">
+                <div class="col-md-4 feature-item">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Top Equipment</h3>
+                    <p>Access cutting-edge gym equipment in Madhapur for all your fitness needs.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Expert Trainers</h3>
+                    <p>Train with certified fitness trainers in Hyderabad dedicated to your success.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Varied Classes</h3>
+                    <p>From Yoga to HIIT, find the best fitness classes in Hyderabad at FitLife.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content (Accordion and Cards) -->
+    <div class="container my-5">
+        <!-- Accordion (Gym FAQs) -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What are the operating hours of FitLife Gym in Madhapur?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        FitLife Gym in Madhapur, Hyderabad is open Monday–Friday from 5 AM to 10 PM, and weekends from 7
+                        AM to 8 PM. Perfect for early risers and night owls alike!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What fitness classes are offered at FitLife Gym?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        At FitLife Gym in Hyderabad, we offer Yoga, Zumba, HIIT, Spin, and Strength Training classes.
+                        Led by expert instructors, our sessions are designed to keep you motivated. Check our schedule!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How do I join FitLife Gym in Madhapur?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Sign up online or visit FitLife Gym in Madhapur for a free tour. New members get a complimentary
+                        first week and fitness assessment. Start your fitness journey today!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards Section -->
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1169&auto=format&fit=crop"
+                        class="card-img-top" alt="Personal Trainer John Doe at FitLife Gym">
+                    <div class="card-body">
+                        <h5 class="card-title">Trainer Spotlight: John Doe</h5>
+                        <p class="card-text">With 10+ years of experience, John offers top personal training in
+                            Hyderabad at FitLife Gym.</p>
+                        <a href="/trainers" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop"
+                        class="card-img-top" alt="FitLife Gym Membership Offer">
+                    <div class="card-body">
+                        <h5 class="card-title">Special Membership Offer</h5>
+                        <p class="card-text">Join FitLife Gym in Madhapur this month for 20% off your first 3 months.
+                            Unlimited access included!</p>
+                        <a href="/membership" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1549476464-37392f717541?q=80&w=1170&auto=format&fit=crop"
+                        class="card-img-top" alt="HIIT Classes at FitLife Gym">
+                    <div class="card-body">
+                        <h5 class="card-title">HIIT Classes in Hyderabad</h5>
+                        <p class="card-text">Burn calories with our High-Intensity Interval Training at FitLife Gym,
+                            every Tuesday and Thursday at 6 PM.</p>
+                        <a href="/classes" class="btn btn-primary">Join Class</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Members Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"FitLife Gym in Madhapur transformed my fitness journey with amazing trainers and classes!"
+                        </p>
+                        <h5>- Sarah M.</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"Top-notch equipment and a welcoming community at this Hyderabad gym. I feel stronger every
+                            day!"</p>
+                        <h5>- James T.</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"The membership deal and HIIT classes at FitLife Gym are unbeatable in Madhapur!"</p>
+                        <h5>- Emily R.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Map Iframe -->
+    <section class="contact">
+        <div class="container">
+            <h2>Contact FitLife Gym in Madhapur</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <form id="contactForm" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"
+                                    required></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30452.450599493597!2d78.3838633130146!3d17.43306717692715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91d24935df7b%3A0x2b98cea68c10880!2sCult%20Madhapur%20-%20Gym%20in%20Madhapur%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1740124097680!5m2!1sen!2sin"
+                        class="map-iframe" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>© 2025 FitLife Gym. All rights reserved. | Madhapur, Hyderabad, Telangana, India</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Form Validation Script -->
+    <script>
+        // Function to validate forms
+        function validateForm(formId) {
+            const form = document.getElementById(formId);
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                let isValid = true;
+
+                // Check all required inputs
+                form.querySelectorAll('[required]').forEach(input => {
+                    if (!input.value.trim()) {
+                        input.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        input.classList.remove('is-invalid');
+                    }
+
+                    // Email validation
+                    if (input.type === 'email') {
+                        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        if (!emailPattern.test(input.value)) {
+                            input.classList.add('is-invalid');
+                            isValid = false;
+                        }
+                    }
+
+                    // Phone validation (10 digits)
+                    if (input.type === 'tel') {
+                        const phonePattern = /^[0-9]{10}$/;
+                        if (!phonePattern.test(input.value)) {
+                            input.classList.add('is-invalid');
+                            isValid = false;
+                        }
+                    }
+                });
+
+                if (isValid) {
+                    alert('Form submitted successfully!');
+                    form.reset(); // Reset form after submission
+                    if (formId === 'membershipForm') {
+                        bootstrap.Modal.getInstance(document.getElementById('joinModal')).hide();
+                    }
+                }
+            });
+        }
+
+        // Validate both forms
+        validateForm('membershipForm');
+        validateForm('contactForm');
+    </script>
+</body>
+
+</html>
